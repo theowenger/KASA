@@ -1,13 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import kasa from './assets/database/kasa.json';
+
+function DisplayJson() {
+  console.log(kasa)
+  return (
+    <div>
+      {kasa.forEach((product) => (
+        < span key={product.id}>{product.title}</span>
+      ))
+      }</div >
+  )
+}
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <DisplayJson />
   </React.StrictMode>
 );
 
