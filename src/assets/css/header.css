@@ -1,0 +1,45 @@
+.home {
+    position: relative;
+    width: 100%;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+    width: 992px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+
+}
+
+.navigation h2 {
+    width: 120px;
+    font-family: 'Montserrat';
+    color: #FF6060;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navigation h2:visited {
+    font-family: 'Montserrat';
+    color: #FF6060;
+    font-weight: 500;
+    text-decoration: none;
+}
