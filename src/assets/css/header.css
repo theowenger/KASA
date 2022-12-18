@@ -6,6 +6,9 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    margin: 0%;
+    padding: 0%;
 }
 
 .header {
@@ -30,11 +33,13 @@
 }
 
 .navigation h2 {
-    width: 120px;
+    margin-right: 20px;
+    width: 100%;
     font-family: 'Montserrat';
     color: #FF6060;
     font-weight: 500;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .navigation h2:visited {
@@ -42,4 +47,29 @@
     color: #FF6060;
     font-weight: 500;
     text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+
+    .header {
+
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header img {
+        width: 100px;
+    }
+
+    .navigation {
+        justify-content: flex-end;
+
+        width: 100%;
+    }
+
+    .navigation h2 {
+        font-size: 1em;
+        white-space: nowrap;
+    }
 }

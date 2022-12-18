@@ -3,13 +3,14 @@ import React from "react";
 import  '../assets/css/404.css'
 import Header from "../components/header";
 import Body404 from "../components/body404";
-
+import Footer from "../components/footer";
 
 function PageNotFound() {
     return (
         <div className="home">
         <Header />
         <Body404 />
+        <Footer />
         </div>
     )
 }

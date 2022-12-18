@@ -15,13 +15,17 @@ import Product from './pages/product';
 import Index from './pages/index';
 import About from './pages/about';
 
+import kasa from "./assets/database/kasa.json"
+
 
 function App() {
   return (
   <Router>
     <Routes>
     <Route path="" element={<Index />} />
-    <Route path="products/:productId" element={<Product />} />
+    {kasa.map((e) => (
+      <Route path={e.id} element={<Product />} />
+                    ))}
     <Route path="about" element={<About />} />
     <Route path="*" element={<PageNotFound />} />
     </Routes>
