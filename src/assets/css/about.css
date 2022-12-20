@@ -40,18 +40,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    transition: 0.70s;
+
+    cursor: pointer;
 }
 
-.about-img {
-    transform: rotate(0deg);
-    transform: scaleY(1);
-}
-
-.about-button:hover .about-img {
-    background-color: aqua;
-    transform: rotate(360deg);
-}
 
 .about-txt {
     width: 90%;

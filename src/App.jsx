@@ -8,6 +8,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom"
+import '../src/fetch'
 
 //pages
 import PageNotFound from './pages/404';
@@ -22,12 +23,12 @@ function App() {
   return (
   <Router>
     <Routes>
-    <Route path="" element={<Index />} />
+    <Route path="/" element={<Index />} />
     {kasa.map((e) => (
-      <Route path={e.id} element={<Product />} />
+      <Route path="/apartments/:id" element={<Product />} />
                     ))}
-    <Route path="about" element={<About />} />
-    <Route path="*" element={<PageNotFound />} />
+    <Route path="/about" element={<About />} />
+    <Route path="/*" element={<PageNotFound />} />
     </Routes>
   </Router>
 )}

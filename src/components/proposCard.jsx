@@ -1,7 +1,10 @@
 import React from "react"
 import vector from "../assets/img/Vector.png"
+import vectorUp from "../assets/img/VectorUp.png"
+
 
 class AboutList extends React.Component {
+
 
     constructor(props) {
         super(props);
@@ -20,7 +23,7 @@ class AboutList extends React.Component {
         return <nav className="about-card">
             <button className="about-button" onClick={this.toggleText1}>
                 <h2>{this.props.name}</h2>
-                <img className="about-img" style={{transform: this.state.texte1Visible ? 'rotate(90deg)' : 'rotate(00deg)' }} src={vector} alt="icon"></img>
+                <img className="about-img"  src= {this.state.reverseButton ?`${vectorUp}`: `${vector}`} alt="icon"></img>
             </button>
             <h3 className="about-txt" style={{ display: this.state.text1Visible ? 'block' : 'none' }}>{this.props.description}</h3>
         </nav>
