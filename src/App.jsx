@@ -16,21 +16,25 @@ import Product from './pages/product';
 import Index from './pages/index';
 import About from './pages/about';
 
-import kasa from "./assets/database/kasa.json"
+import Header from './components/header';
+import Footer from './components/footer';
 
 
 function App() {
   return (
-  <Router>
-    <Routes>
-    <Route path="/" element={<Index />} />
-    {kasa.map((e) => (
-      <Route path="/apartments/:id" element={<Product />} />
-                    ))}
-    <Route path="/about" element={<About />} />
-    <Route path="/*" element={<PageNotFound />} />
-    </Routes>
-  </Router>
-)}
+    <div className='home'>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/apartments/:id" element={<Product />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/*" element={<PageNotFound />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
+  )
+}
 
 export default App;

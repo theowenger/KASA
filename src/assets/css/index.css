@@ -14,6 +14,10 @@
     grid-row-gap: 30px;
 }
 
+.card-container a {
+    text-decoration: none;
+}
+
 .card {
 
     width: 280px;
