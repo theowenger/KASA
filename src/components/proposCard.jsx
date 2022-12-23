@@ -36,10 +36,10 @@ function ProposCard() {
     return (
         <div className="propos-container">
 
-            <AboutList name='Fiabilité' description ='Tout nos logements sont certifiés par le syndycat des proprietaires. Notre équipe est diponible 24h/24 7J/7 sur notre lige telephonique au 04.88.88.88.88.'/>
+            <AboutList name='Fiabilité' description ='Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.'/>
             <AboutList name='Respect'  description = 'La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.'/>
-            <AboutList name='Service' description = 'Reconnu depuis maintenant 25 ans. Kasa est un groupe mondialement reconnu pour son service client irreprochable. Notre taux de satisfation est de 97% sur ComparerLesOffres.com.'/>
-            <AboutList name='Responsabilité' description = 'Notre société est engagée ecologiquement. Nos maisons sont certifiées A en energie et nous faisons notre possible pour reduire notre empreinte sur la planete.'/>
+            <AboutList name='Service' description = "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."/>
+            <AboutList name='Responsabilité' description = "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."/>
         </div>
     )
 }

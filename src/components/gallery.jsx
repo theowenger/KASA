@@ -10,9 +10,10 @@ function Gallery(props) {
             <ul className='card-container'>
                 {kasa.map((e) => (
                     <Link to={'apartments/'+e.id} key={e.id} >
-                    <li key={e.id} className="card">
-                        <img key={e.cover} src={e.cover} alt='loft'></img>
-                        <h3 key={e.title}>{e.title}</h3>
+                    <li key={e.id} className="card"  style={{ backgroundImage: `url(${e.cover})`}}>
+                        <div className='card-filter'>
+                        <div><h3 key={e.title}>{e.title}</h3></div>
+                        </div>
                         </li>
                         </Link>
                     ))}

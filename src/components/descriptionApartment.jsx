@@ -32,7 +32,6 @@ class ApartmentCollapse extends React.Component {
 
         const equipmentsList = [];
         if (Array.isArray(this.props.equipments)) {
-            console.log(this.props.equipments)
           for (let i = 0; i < this.props.equipments.length; i++) {
             equipmentsList.push(<li key={i}>{this.props.equipments[i]}</li>);
           }
