@@ -15,7 +15,7 @@ function TitleApartment() {
                 <h2>{product.location}</h2>
                 <Tag />
             </div>
-            <div>
+            <div className='host-ranked-container'>
                 <div className='host-container'>
                     <h3>{product.host.name}</h3>
                     <img src={product.host.picture} alt="host" />
