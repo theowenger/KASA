@@ -33,7 +33,7 @@ function Carroussel() {
     return (
         <div className='carroussel'
             style={{ backgroundImage: `url(${product.pictures[currentImageIndex]})` }}>
-            <div className='carroussel-icon'>
+            <div className={product.pictures.length === 1 ? 'carroussel-icon-hidden' : 'carroussel-icon'}>
                 <button className='carroussel-btn' onClick={clickLeft}><img src={arrowLeft} alt="arrow-left"></img></button>
                 <button className='carroussel-btn' onClick={clickRight}><img src={arrowRight} alt="arrow-right"></img></button>
             </div>
@@ -41,5 +41,6 @@ function Carroussel() {
         </div>
     )
 }
+{/* <Link to="/" className={location.pathname === '/' ? 'underline' : ''}>'carroussel-icon' */}
 
 export default Carroussel

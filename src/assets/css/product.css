@@ -21,6 +21,10 @@
     top: 30px;
 }
 
+.carroussel-icon-hidden {
+    opacity: 0;
+}
+
 .carroussel p {
     font-family: 'Montserrat';
     font-weight: 600;
@@ -82,13 +86,15 @@
 }
 
 .tag-unite {
-    width: 100%;
+
     text-align: center;
     background-color: #FF6060;
     color: white;
     margin-left: 5px;
     margin-right: 5px;
     padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
     border-radius: 20px;
 }
 
@@ -168,11 +174,10 @@
         flex-wrap: wrap;
     }
 
-    .tag-unite {
-        width: 30vh;
-    }
+
 
     .host-ranked-container {
+
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
@@ -195,5 +200,23 @@
         width: 90%;
         margin-bottom: 20px;
 
+    }
+}
+
+@media screen and (max-width: 553px) {
+
+
+    .host-ranked-container {
+
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+
+    .star-container {
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }

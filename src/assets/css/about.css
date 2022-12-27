@@ -7,6 +7,7 @@
 
     filter: brightness(70%);
     border-radius: 25px;
+    object-fit: cover;
 
 }
 
@@ -59,4 +60,17 @@
     line-height: 142.6%;
     font-style: normal;
 
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .propos-banner {
+        width: 90vw;
+
+    }
+
+    .propos-container {
+        width: 90vw;
+    }
 }

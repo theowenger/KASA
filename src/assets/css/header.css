@@ -6,7 +6,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
     margin: 0%;
     padding: 0%;
 }
@@ -27,13 +26,14 @@
 .navigation {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 30%;
 
 }
 
 .navigation a {
     text-decoration: none;
+    text-align: right;
 }
 
 .navigation h2 {
@@ -62,23 +62,35 @@
 
     .header {
 
-        width: 90%;
+        width: 90vw;
         justify-content: space-between;
         align-items: center;
     }
 
-    .header img {
-        width: 100px;
-    }
 
     .navigation {
         justify-content: flex-end;
 
-        width: 100%;
     }
 
     .navigation h2 {
-        font-size: 1em;
+
         white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 483px) {
+
+    .header {
+
+        flex-direction: column;
+    }
+
+    .navigation {
+        justify-content: center;
+    }
+
+    .navigation h2 {
+        text-align: center;
     }
 }
