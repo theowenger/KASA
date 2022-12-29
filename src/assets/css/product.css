@@ -70,6 +70,9 @@
 
 .product-presentation {
     font-family: "Montserrat";
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .product-presentation h1 {
@@ -99,6 +102,11 @@
 }
 
 .host-ranked-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
     margin-bottom: 30px;
 }
 
@@ -120,9 +128,7 @@
 }
 
 .star-container {
-    position: relative;
-    top: 60px;
-    left: 30px;
+
 
     width: 80%;
     display: flex;
