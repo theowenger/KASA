@@ -2,6 +2,7 @@ import kasa from '../assets/database/kasa.json'
 import '../assets/css/product.css'
 import { useParams } from 'react-router-dom'
 
+//Just iterate on the product.tag of the product and display each one
 
 function Tag() {
     const {id} = useParams()

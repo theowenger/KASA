@@ -9,8 +9,6 @@ import vectorUp from "../assets/img/VectorUp.png"
 class ApartmentCollapse extends React.Component {
     
 
-
-        
     constructor(props) {
         super(props);
 
@@ -36,8 +34,8 @@ class ApartmentCollapse extends React.Component {
             equipmentsList.push(<li key={i}>{this.props.equipments[i]}</li>);
           }
         }
-        
-        return <nav className="collapse-card">
+        // <div className={product.pictures.length === 1 ? 'carroussel-icon-hidden' : 'carroussel-icon'}>
+        return <nav className={this.state.text1Visible? "collapse-card-hidden" :"collapse-card"}>
             <button className="about-button" onClick={this.toggleText1}>
                 <h2>{this.props.name}</h2>
                 <img className="about-img"  src= {this.state.reverseButton ?`${vectorUp}`: `${vector}`} alt="icon"></img>

@@ -4,6 +4,9 @@ import { useParams } from 'react-router-dom'
 import Tag from './tag'
 import StarsRating from './stars'
 
+//In the Return, we find the title, the location, the name and the picture of Host.
+//In the end of the function, we find the component StarsRating who's display Stars
+
 function TitleApartment() {
     const { id } = useParams()
     let product = kasa.find(i => i.id === id)

@@ -41,6 +41,5 @@ function Carroussel() {
         </div>
     )
 }
-{/* <Link to="/" className={location.pathname === '/' ? 'underline' : ''}>'carroussel-icon' */}
 
 export default Carroussel

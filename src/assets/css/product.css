@@ -120,6 +120,7 @@
 
 .host-container h3 {
     width: min-content;
+    text-align: right;
 }
 
 .host-container img {
@@ -146,6 +147,13 @@
 .collapse-card {
     width: 45%;
     margin-bottom: 150px;
+    background-color: #ffffff;
+}
+
+.collapse-card-hidden {
+    width: 45%;
+    margin-bottom: 150px;
+    background-color: #f6f6f6;
 }
 
 .collapse-txt {
@@ -206,6 +214,11 @@
         width: 90%;
         margin-bottom: 20px;
 
+    }
+
+    .collapse-card-hidden {
+        width: 90%;
+        margin-bottom: 20px;
     }
 }
 

@@ -5,6 +5,8 @@ import { useParams } from 'react-router-dom'
 import starFull from '../assets/img/StarFull.png'
 import starEmpty from "../assets/img/starEmpty.png"
 
+//In this component, we push a full/empty star in the array 'stars'. To know if a star is full or empty we look in product.rating
+
 
 function StarsRating () {
     const { id } = useParams()

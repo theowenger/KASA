@@ -1,12 +1,11 @@
 import React from "react";
-// import {Link} from "react-router-dom"
 import  '../assets/css/header.css'
 
 import Banner from "../components/banner"
 import Gallery from "../components/gallery"
 
 
-function Index(props) {
+function Index() {
     return (
         <div className="home">
         <Banner />
