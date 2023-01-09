@@ -1,5 +1,4 @@
 import React from "react";
-// import {Link} from "react-router-dom"
 import  '../assets/css/product.css'
 import Carroussel from "../components/carroussel";
 import TitleApartment from "../components/titleApartment";
