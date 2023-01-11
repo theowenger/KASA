@@ -2,7 +2,7 @@ import banner from '../assets/img/banner.png'
 import "../assets/css/banner.css"
 import React from 'react'
 
-function Banner() {
+function Banner(props) {
     return (
         <div className='banner-container' 
         style={{ backgroundImage: `url(${banner})` }}>

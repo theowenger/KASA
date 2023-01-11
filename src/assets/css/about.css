@@ -17,15 +17,35 @@
     width: 80%;
     margin-top: 5%;
     margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.about-card {
+.collapse-apt {
+    background-color: aqua;
+    width: 45%;
+}
+
+.collapse-about {
+    width: 100%;
+}
+
+.collapse-card {
     margin-bottom: 30px;
     margin-top: 30px;
     background-color: #f6f6f6;
+
 }
 
-.about-button {
+.collapse-card-hidden {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: #ffffff;
+}
+
+.collapse-button {
     font-family: "Montserrat";
     font-size: 0.8em;
     font-weight: 500;
@@ -48,7 +68,7 @@
 }
 
 
-.about-txt {
+.collapse-txt {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -73,4 +93,13 @@
     .propos-container {
         width: 90vw;
     }
+
+    .collapse-card {
+        width: 90%;
+    }
+
+    .collapse-card-hidden {
+        width: 90%;
+    }
+
 }

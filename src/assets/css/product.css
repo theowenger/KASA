@@ -144,17 +144,7 @@
     justify-content: space-between;
 }
 
-.collapse-card {
-    width: 45%;
-    margin-bottom: 150px;
-    background-color: #ffffff;
-}
 
-.collapse-card-hidden {
-    width: 45%;
-    margin-bottom: 150px;
-    background-color: #f6f6f6;
-}
 
 .collapse-txt {
     list-style-type: none;
